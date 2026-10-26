@@ -1,0 +1,15 @@
+name: "Numeric Summary"
+description: "Summarize a JSON array of finite numbers with deterministic min, max, sum, mean, median, and count outputs."
+inputs:
+  payload:
+    description: "JSON payload consumed by the action"
+    required: true
+outputs:
+  result:
+    description: "Compact JSON result produced by the action"
+runs:
+  using: "node24"
+  main: "index.js"
+branding:
+  icon: "check-circle"
+  color: "blue"
